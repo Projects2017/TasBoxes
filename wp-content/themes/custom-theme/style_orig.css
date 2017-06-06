@@ -1,0 +1,269 @@
+div{
+  box-sizing: border-box;
+}
+.page-header.custom-header {
+	  width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    background: url("http://tasboxes.com/wp-content/uploads/banner/banner-marketprofile-scan-pre.jpg") center center no-repeat;
+    background-size: cover;
+    margin-top: 0;
+}
+.container.custom-banner {
+    width: 100%;
+    /*height: 620px;*/
+    height: 240px;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.sub-wrapper-home {
+   width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-color-wrapper {
+    border-radius: 0;
+    background: rgba(51, 51, 51, 0.52);
+    height:105px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+h4.color-white {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    clear:both;
+}
+h1.color-white{
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+header.navbar.navbar-full.navbar-inverse.custom_head {
+    background-color: #2bb673;
+    margin-bottom: 0;
+    color: #ffffff;
+    border-radius: 0;
+    border-color: transparent;
+}
+h1.logo > a {
+    color: #fff;
+}
+h1.logo > a:hover{
+    text-decoration: none;
+}
+
+.rectangle-tas-info {
+    background: -moz-linear-gradient(90deg, #58585a 40%,#2bb673 29%);
+    background: -webkit-linear-gradient(90deg, #58585a 40%,#2bb673 29%);
+    background: linear-gradient(90deg, #58585a 40%,#2bb673 29%);
+    color: #edeee7;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    height: 60px;
+    /* margin-bottom: 47px; */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    word-spacing: 1px;
+    align-items: center;
+    flex-flow: row;
+}
+h3.tas-information-pdf {
+    font-size: 1em;
+}
+.container.description-data {
+    width: 60%;
+}
+.container.click-description {
+    width: 53%;
+    color: #818285;
+    text-align: center;
+}
+p.description-color {
+    font-size: 1.6em;
+    font-weight: 100;
+}
+.container.note {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #818285;
+}
+p.note {
+    font-size: 1.2em;
+}
+strong.higlight-color {
+    color: #2bb673;
+}
+footer.tasboxes-footer {
+    background: #58585a;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.sub-footer.text-center {
+    color: #fff;
+    width:100%;
+}
+h3.content-footer > a {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 200;
+}
+h3.content-footer > a:hover {
+    text-decoration: none;
+}
+.col-lg-32.col-md-32.gain-main-wrapper {
+    width: 100%;
+    background-color: #f1f1f2;
+    margin-bottom: 25px;
+}
+
+.col-lg-8.col-md-8.img-align-gain {
+    position: absolute;
+    top: -117px;
+    right: 65px;
+}
+
+p.gain-paragraph, p.paragraph-part-2 {
+    font-size: 1.6em;
+    color: #8e9093;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+h1.text-center.part1-gain {
+    color: #838487;
+    margin-bottom: 25px;
+}
+.container.wrapper-gain {
+    margin-bottom: 30px;
+}
+strong.gain-importantnote-part1 {
+    color: #555557;
+}
+p.imortantnote-gain-paragraph {
+    color: #888a8c;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+.install-buttons-gain {
+    width: 100%;
+}
+.wrapper-buttons-gain {
+    background-color: #58595b;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.col-lg-16.col-md-16.button-gain-design {
+    padding: 20px;
+}
+a.btn.btn-gain-button {
+    background-color: #09bc8a;
+    color: #ffffff;
+    border: 0.5px solid #111110;
+    text-decoration: none;
+    width: 80%;
+    padding: 15px;
+}
+.container.importantnote-gain {
+      margin-bottom: 25px;
+}
+.part2-wrapper {
+    background-color: #cde8d5;
+    margin-bottom: 30px;
+}
+h1.part2-text-gain {
+    color: #838487;
+    text-align: center;
+    margin-bottom: 25px;
+}
+p.important-note-2-gain {
+    color: #888a8c;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+
+strong.color-important-note2 {
+    color: #4abb80;
+}
+.part3-wrapper-gain {
+    margin-bottom: 30px;
+}
+h1.part3-text-gain {
+    color: #838487;
+    text-align: center;
+    margin-bottom: 25px;
+}
+p.part3-paragraph {
+    color: #888a8c;
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
+p.install-color-metatrader {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #2bb673;
+}
+h3.title-content-metatrader, h3.title2-content-metatrader {
+    font-weight: bold;
+    color: #58585a;
+    font-size: 1.4em;
+}
+p.main-content1-metatrader {
+    color: #888a8c;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+a.btn.btn-gain-button-metatrader {
+    background-color: #09bc8a;
+    color: #ffffff;
+    border: 0.5px solid #111110;
+    text-decoration: none;
+    width: 30%;
+    padding: 15px;
+    font-size: 1.6em;
+}
+.btn-align-metrader {
+   text-align: center;
+   margin-bottom: 20px;
+}
+a.btn.btn-gain-button-navigator {
+    background-color: #09bc8a;
+    color: #ffffff;
+    border: 0.5px solid #111110;
+    text-decoration: none;
+    width: 40%;
+    padding: 15px;
+    font-size: 1.6em;
+}
+.btn-align-navigator {
+    text-align: center;
+    margin-bottom: 20px;
+}
+strong.txt-tnavigator {
+    color: #58585a;
+}
+.tradestationcontent3 {
+    margin-top: 30px;
+}

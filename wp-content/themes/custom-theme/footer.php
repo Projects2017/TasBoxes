@@ -10,7 +10,7 @@
  */
 ?>
 
-</div><!-- .site-content -->
+		</div><!-- .site-content -->
 <footer class="tasboxes-footer">
     <div class="container">
         <div class="tas-wrapper-logo">
@@ -48,10 +48,9 @@
              */
             do_action( 'twentysixteen_credits' );
             ?>
-            <h3 class="content-footer"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> |  <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a></h3>
-
+            <h3 class="content-footer"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
         </div><!-- .site-info -->
-    </div>
+        </div>
     </div>
 </footer>
 

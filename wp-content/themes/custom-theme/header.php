@@ -14,25 +14,19 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"content="<?php bloginfo('description'); ?>">
-    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-    <link rel="shortcut-icon" href="<?php echo $favicon; ?>">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo $touchicon; ?>" sizes="152x152">
-
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php endif; ?>
-    <?php
-    $favicon = IMAGES .'/icons/favicon.ico';
-    $touchicon = IMAGES . '/icons/apple-touch-icon-precomposed.png';
-    ?>
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-    <div class="site-inner">
+        <div class="col-lg-32 col-md-32 top-number">
+            <div class="container number-wrapper">
+                <p class="number"><strong class="number-info">Have A Question?</strong>  <a href="tel:888-537-0070 710" class="phone-number"><span class="fa fa-phone" aria-hidden="true"></span> 888-537-0070 X 710</a></p>
+            </div>
+        </div>
         <header class="navbar navbar-full navbar-inverse custom_head" role="banner">
             <div class="container main-header-custom">
                 <div class="navbar-header"></div>
@@ -42,17 +36,24 @@
                 <div class="container center">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only"><?php _e('Toggle navigation', 'TASBOXES'); ?></span>
+                            <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"></a>
-                        <?php bloginfo('name'); ?>
+                        <a class="navbar-brand div-position" href="<?php echo esc_url( home_url( '/')); ?>">
+                            <?php bloginfo( 'name');?>
+                        </a>
                     </div>
-
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <?php
+                            wp_nav_menu( array(
+                                    'menu_class' => 'nav navbar-nav navbar-right custom-nav',
+                                    'theme_location' => 'main-menu',
+                                    'container' => false
+                            ));
+                        ?>
+                    </div>
                 </div>
             </div>
         </header>
-
-        <div id="content" class="site-content">

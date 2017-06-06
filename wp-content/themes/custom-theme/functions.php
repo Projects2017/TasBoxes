@@ -28,14 +28,45 @@
 /**
  * Twenty Sixteen only works in WordPress 4.4 or later.
  */
+/** Custom theme Setup **/
+if ( ! function_exists('custom_theme') ){
+    function custom_theme(){
+        $lang_dir = THEMEROOT . '/languages ';
+        load_theme_textdomain('TASBOXES', $lang_dir);
 
-/** Define the Theme **/
-define('THEMEROOT', get_stylesheet_directory_ur() );
-define('IMAGES', THEMEROOT .  '/img');
-define('JS', THEMEROOT. '/js');
+        add_theme_support( 'automatic-feed-links');
+        add_theme_support( 'post-thumbnails');
+
+        register_nav_menus( array (
+                'main-menu' => __('Main Menus', 'TASBOXES')
+        ) );
+    }
+    add_action( 'after_setup_theme', 'custom_theme' );
+}
 
 
-/** End of the Theme  */
+
+    /* SCRIPTS */
+if ( ! function_exists('custom_scripts') ){
+    function custom_scripts(){
+        wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), false, true);
+        wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', false, false, true);
+        wp_enqueue_script('html5-js', get_template_directory_uri() . '/js/html5.js', false, false, true);
+
+        wp_enqueue_script( 'bootstrap-js' );
+        wp_enqueue_script( 'main-js' );
+        wp_enqueue_script( 'html5-js');
+
+        wp_enqueue_style('custom-css', get_template_directory_uri() . '/css/main.css');
+        wp_enqueue_style('fontawesome-css', get_template_directory_uri() . '/css/font-awesome.css');
+        wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css');
+
+    }
+    add_action( 'wp_enqueue_scripts', 'custom_scripts' );
+}
+
+/* END OF SCRIPTS */
+/** End of Custom Theme Setup **/
 
 
 
@@ -138,7 +169,6 @@ if ( ! function_exists( 'twentysixteen_setup' ) ) :
         // added theme functions for TaxBoxes
         function wpt_theme_styles(){
             wp_enqueue_style('bootstrap_min_css', get_template_directory_uri() . '/css/bootstrap.min.css');
-            wp_enqueue_style('custom_css', get_template_directory_uri() . 'css/custom.css');
         }
         add_action('wp_enqueue_scripts','wpt_theme_styles' );
 
@@ -146,8 +176,8 @@ if ( ! function_exists( 'twentysixteen_setup' ) ) :
 // 	wp_enqueue_script('bootstrap_min_js', get_template_directory_uri() . '/js/bootstrap.min.js', '', '', false);
 // 	wp_enqueue_script('foundation_js', get_template_directory_uri() . '/js/foundation.js', array('jquery'), '', true);
 // 	wp_enqueue_script('main_js', get_template_directory_uri() . '/app.js', array('jquery', 'main_js'), '', true);
-
 // }
+
 // add_action('wp_enqueue_scripts', 'wpt_themes_js');
 // end added themes functions for TAXBOXES
 
